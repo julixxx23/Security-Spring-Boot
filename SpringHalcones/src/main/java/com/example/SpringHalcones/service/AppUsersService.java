@@ -10,11 +10,11 @@ import org.springframework.data.domain.Pageable;
 
 public interface AppUsersService{
     AppUsersResponseDTO crear(AppUsersCreateDTO dto);
-    AppUsersResponseDTO actualizar(AppUsersUpdateDTO dto);
+    AppUsersResponseDTO actualizar(Long id, AppUsersUpdateDTO dto);
     AppUsersResponseDTO buscarPorId(Long id);
-    Page<AppUsersSimpleDTO> buscarTodos(Pageable pageable);
-    Void eliminar(Long id);
-    Void cambiarEstado(Long id, Boolean estado);
+    Page<AppUsersSimpleDTO> buscarTodos(String username, Pageable pageable);
+    void eliminar(Long id);
+    void cambiarEstado(Long id, Boolean estado);
 
 
 }

@@ -20,8 +20,8 @@ public class AppUsersSimpleDTO {
     private List<String> roles;
 
 
-    public static AppUsersResponseDTO fromEntity(AppUsers appUsers){
-        return AppUsersResponseDTO.builder()
+    public static AppUsersSimpleDTO fromEntity(AppUsers appUsers){
+        return AppUsersSimpleDTO.builder()
                 .id(appUsers.getId())
                 .username(appUsers.getUsername())
                 .enabled(appUsers.getEnabled())

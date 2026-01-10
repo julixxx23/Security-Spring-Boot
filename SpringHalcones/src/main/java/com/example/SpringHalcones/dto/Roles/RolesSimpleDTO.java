@@ -14,8 +14,8 @@ public class RolesSimpleDTO {
     private Long id;
     private String name;
 
-    public static RolesResponseDTO fromEntity(Roles roles){
-        return RolesResponseDTO.builder()
+    public static RolesSimpleDTO fromEntity(Roles roles){
+        return RolesSimpleDTO.builder()
                 .id(roles.getId())
                 .name(roles.getName())
                 .build();
