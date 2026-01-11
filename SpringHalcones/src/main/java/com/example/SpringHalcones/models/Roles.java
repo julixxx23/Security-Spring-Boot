@@ -17,5 +17,8 @@ public class Roles {
     private Long Id;
     @Column(name = "NAME")
     private String name;
+    @Builder.Default
+    @Column(nullable = false)
+    private Boolean enabled = true;
 
 }

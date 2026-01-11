@@ -9,10 +9,11 @@ import org.springframework.data.domain.Pageable;
 
 public interface RolesService {
     RolesResponseDTO crear(RolesCreateDTO dto);
-    RolesResponseDTO actualizar(RolesUpdateDTO dto);
+    RolesResponseDTO actualizar(Long id, RolesUpdateDTO dto);
     RolesResponseDTO buscarPorId(Long id);
     Page<RolesSimpleDTO> buscarTodos(Pageable pageable);
-    Void eliminar(Long id);
+    void eliminar(Long id);
+    void cambiarEstado(Long id, Boolean estado);
 
 
 }

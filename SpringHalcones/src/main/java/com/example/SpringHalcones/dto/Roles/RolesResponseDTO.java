@@ -13,11 +13,13 @@ import lombok.NoArgsConstructor;
 public class RolesResponseDTO {
     private Long id;
     private String name;
+    private Boolean enabled;
 
     public static RolesResponseDTO fromEntity(Roles roles){
         return RolesResponseDTO.builder()
                 .id(roles.getId())
                 .name(roles.getName())
+                .enabled(roles.getEnabled())
                 .build();
     }
 }
