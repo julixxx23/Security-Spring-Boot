@@ -28,7 +28,7 @@ public class AppUsers {
     private Boolean enabled;
 
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "USER_ROLES",
             joinColumns = @JoinColumn(name = "USER_ID"),
