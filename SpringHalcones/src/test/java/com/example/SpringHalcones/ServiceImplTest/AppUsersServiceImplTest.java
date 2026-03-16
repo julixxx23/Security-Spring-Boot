@@ -10,5 +10,4 @@ public class AppUsersServiceImplTest {
     @Mock
     private AppUsersRepository appUsersRepository;
 
-jajajajajajaja
 }
